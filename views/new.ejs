@@ -1,0 +1,26 @@
+<html>
+        <head lang="en">
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="/css/style.css">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+            <title>Cat Dashboard</title>
+        </head>
+    
+        <body>
+            <div id="display"> 
+                <h1>Add New Cat</h1>
+            </div>
+            <div class="form">
+                <form action="/cats/new" method="post">
+                    <label for="name">Cat Name:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="quote">Cat Treat:</label>
+                    <input type="treat" name="treat" id="treat">
+                    <input type="submit" value="Add new cat!">
+                </form>
+               
+            </div>
+        </body>
+    
+    </html>

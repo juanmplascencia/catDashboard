@@ -1,0 +1,23 @@
+<html>
+        <head lang="en">
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="/css/style.css">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+            <title>Cat Dashboard</title>
+        </head>
+    
+        <body> 
+            <h1>All Cats!</h1>
+            <a href="/cats/new">Create new cat</a>
+                <% for (var i in cats) { %>
+                    <p>Name: <a href="/cats/<%= cats[i]._id %>"><%= cats[i].name %></a>
+                        <a href="/cats/edit/<%= cats[i]._id %>">Edit cat</a>
+                        <form action="/cats/destroy/<%= cats[i]._id %>" method='post'>
+                          <input type="submit" value="Delete">
+                        </form>
+                      </p>
+                <% } %>
+        </body>
+    
+    </html>

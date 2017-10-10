@@ -1,0 +1,26 @@
+<html>
+        <head lang="en">
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="/css/style.css">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+            <title>Cat Dashboard</title>
+        </head>
+    
+        <body>
+            <div id="display"> 
+                <h1>Edit <%= cat[0].name %>!</h1>
+            </div>
+            <div class="form">
+                <form action="/cats/<%= cat[0].id %>" method="post">
+                    <label for="name">Cat Name:</label>
+                    <input type="text" name="name" id="name" value="<%= cat[0].name %>">
+                    <label for="quote">Cat Treat:</label>
+                    <input type="treat" name="treat" id="treat" value="<%= cat[0].treat %>">
+                    <input type="submit" value="Edit the cat!">
+                </form>
+                <a href="/">Home</a>
+            </div>
+        </body>
+    
+    </html>

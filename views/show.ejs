@@ -1,0 +1,19 @@
+<html>
+        <head lang="en">
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="/css/style.css">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+            <title>Show</title>
+        </head>
+    
+        <body> 
+            <h1>Show!</h1>
+            <h3>Name: <%= cat[0].name %></h3>
+            <h3>Treat: <%= cat[0].treat %></h3>
+            
+            <a href="/">Home</a>
+            <a href="/cats/edit/<%= cat[0]._id %>">Edit</a>
+        </body>
+    
+    </html>
